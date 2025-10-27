@@ -1,257 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rabba</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="preloader">
-      <div class="spinner"></div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rabba Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div class="mobile-container">
+        <!-- Header -->
+        <header>
+            <div class="profile-info">
+                <img src="images/dashboard.jpg" alt="User Avatar" class="avatar">
+                <div>
+                    <p>Good morning,</p>
+                    <h2>Stephanie Obi</h2>
+                </div>
+            </div>
+            <span class="material-symbols-outlined">
+                notifications
+            </span>
+        </header>
+
+        <!-- Balance Card -->
+        <div class="balance-card">
+            <div class="balance-header">
+                <span>Rabba balance</span>
+                <span class="material-symbols-outlined" id="toggle-balance">
+                    visibility
+                </span>
+            </div>
+            <h1 id="balance-amount">₦200,000.31</h1>
+            <button class="fund-button">Fund account</button>
+        </div>
+
+        <!-- Quick Actions -->
+        <div class="quick-actions">
+            <div class="action-item">
+                <div class="icon-bg">
+                    <span class="material-symbols-outlined">arrow_upward</span>
+                </div>
+                <p>Top up</p>
+            </div>
+            <div class="action-item">
+                <div class="icon-bg">
+                    <span class="material-symbols-outlined">store</span>
+                </div>
+                <p>Utilities</p>
+            </div>
+            <div class="action-item">
+                <div class="icon-bg">
+                    <span class="material-symbols-outlined">swap_horiz</span>
+                </div>
+                <p>Airtime to cash</p>
+            </div>
+            <div class="action-item">
+                <div class="icon-bg">
+                    <span class="material-symbols-outlined">currency_naira</span>
+                </div>
+                <p>R2R</p>
+            </div>
+        </div>
+
+        <!-- Bills Section -->
+        <div class="bills-section">
+            <div class="section-header">
+                <h3>Your Next Bills</h3>
+            </div>
+            <div class="bill-item">
+                <div class="bill-icon">
+                    <span class="material-symbols-outlined">lightbulb</span>
+                </div>
+                <div class="bill-details">
+                    <p>Electricity due in 2 days</p>
+                    <span>Manual reminder</span>
+                </div>
+                <button class="pay-now-button">Pay now</button>
+            </div>
+            <div class="bill-item">
+                <div class="bill-icon">
+                    <span class="material-symbols-outlined">live_tv</span>
+                </div>
+                <div class="bill-details">
+                    <p>Netflix due on 3rd October</p>
+                    <span>Auto deduct</span>
+                </div>
+                <button class="view-button">View</button>
+            </div>
+        </div>
+
+        <!-- My Service Section -->
+        <div class="service-section">
+            <div class="section-header">
+                <h3>My Service</h3>
+            </div>
+            <div class="service-grid">
+                <div class="service-icon"><span class="material-symbols-outlined">tv</span></div>
+                <div class="service-icon"><span class="material-symbols-outlined">tv</span></div>
+                <div class="service-icon"><span class="material-symbols-outlined">tv</span></div>
+                <div class="service-icon"><span class="material-symbols-outlined">tv</span></div>
+                <div class="service-icon"><span class="material-symbols-outlined">tv</span></div>
+                <div class="service-icon"><span class="material-symbols-outlined">tv</span></div>
+                <div class="service-icon"><span class="material-symbols-outlined">tv</span></div>
+                <div class="service-icon"><span class="material-symbols-outlined">tv</span></div>
+                <div class="service-icon"><span class="material-symbols-outlined">tv</span></div>
+                <div class="service-icon"><span class="material-symbols-outlined">tv</span></div>
+            </div>
+        </div>
+
+        <!-- Giveaway Banner -->
+        <div class="giveaway-banner">
+            <h2>RABBA giveaway night</h2>
+            <p>500k worth of vouchers up</p>
+        </div>
+
+        <!-- Bottom Nav -->
+        <nav class="bottom-nav">
+            <div class="nav-item active">
+                <span class="material-symbols-outlined">home</span>
+                <p>Home</p>
+            </div>
+            <div class="nav-item">
+                <span class="material-symbols-outlined">receipt_long</span>
+                <p>Bills</p>
+            </div>
+            <div class="nav-item">
+                <span class="material-symbols-outlined">redeem</span>
+                <p>Rewards</p>
+            </div>
+            <div class="nav-item">
+                <span class="material-symbols-outlined">account_circle</span>
+                <p>Me</p>
+            </div>
+        </nav>
     </div>
-
-    <header>
-      <nav>
-        <div class="logo">Rabba</div>
-        <ul>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <button class="dark-mode-toggle">Dark Mode</button>
-      </nav>
-    </header>
-
-    <main>
-      <section class="hero">
-        <div id="particles-js"></div>
-        <img
-          src=""
-          data-src="https://picsum.photos/1200/800"
-          alt="Hero Image"
-        />
-        <h1>Welcome to <span class="typing"></span></h1>
-        <p>Your success starts here.</p>
-        <a href="#contact" class="cta-button">Get Started</a>
-      </section>
-
-      <section id="features" class="features">
-        <h2>Features</h2>
-        <div class="feature-cards">
-          <div class="card">
-            <h3>Feature One</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </div>
-          <div class="card">
-            <h3>Feature Two</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </div>
-          <div class="card">
-            <h3>Feature Three</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="about" class="about">
-        <h2>About Us</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-      </section>
-
-      <section id="contact" class="contact">
-        <h2>Contact</h2>
-        <p>
-          You can contact me at
-          <a href="mailto:test@example.com">test@example.com</a>
-        </p>
-      </section>
-
-      <section class="social-media">
-        <h2>Social Media</h2>
-        <ul>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">LinkedIn</a></li>
-          <li><a href="#">GitHub</a></li>
-        </ul>
-      </section>
-
-      <section id="portfolio" class="portfolio">
-        <h2>Portfolio</h2>
-
-        <div class="portfolio-items">
-          <div class="portfolio-item">
-            <img src="https://picsum.photos/400/300" alt="Portfolio Item" />
-
-            <h3>Project 1</h3>
-          </div>
-
-          <div class="portfolio-item">
-            <img src="https://picsum.photos/400/300" alt="Portfolio Item" />
-
-            <h3>Project 2</h3>
-          </div>
-
-          <div class="portfolio-item">
-            <img src="https://picsum.photos/400/300" alt="Portfolio Item" />
-
-            <h3>Project 3</h3>
-          </div>
-        </div>
-      </section>
-
-      <section id="testimonials" class="testimonials">
-        <h2>Testimonials</h2>
-
-        <div class="testimonial-items">
-          <div class="testimonial-item">
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
-
-            <h4>- John Doe</h4>
-          </div>
-
-          <div class="testimonial-item">
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
-
-            <h4>- Jane Doe</h4>
-          </div>
-        </div>
-      </section>
-
-      <section id="blog" class="blog">
-        <h2>Blog</h2>
-
-        <div class="blog-posts">
-          <div class="blog-post">
-            <h3>Post 1</h3>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-
-            <a href="#">Read more</a>
-          </div>
-
-          <div class="blog-post">
-            <h3>Post 2</h3>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-
-            <a href="#">Read more</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="cta">
-        <h2>Ready to get started?</h2>
-
-        <a href="#" class="cta-button">Contact me</a>
-      </section>
-
-      <section id="faq" class="faq">
-        <h2>FAQ</h2>
-
-        <div class="faq-items">
-          <div class="faq-item">
-            <h3>Question 1?</h3>
-
-            <p>Answer 1.</p>
-          </div>
-
-          <div class="faq-item">
-            <h3>Question 2?</h3>
-
-            <p>Answer 2.</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="team" class="team">
-        <h2>Our Team</h2>
-
-        <div class="team-members">
-          <div class="team-member">
-            <img src="https://picsum.photos/200/200" alt="Team Member" />
-
-            <h3>John Doe</h3>
-
-            <p>CEO</p>
-          </div>
-
-          <div class="team-member">
-            <img src="https://picsum.photos/200/200" alt="Team Member" />
-
-            <h3>Jane Doe</h3>
-
-            <p>CTO</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="pricing" class="pricing">
-        <h2>Pricing</h2>
-
-        <div class="pricing-plans">
-          <div class="pricing-plan">
-            <h3>Basic</h3>
-
-            <p>0/month</p>
-
-            <ul>
-              <li>Feature 1</li>
-
-              <li>Feature 2</li>
-            </ul>
-
-            <a href="#" class="cta-button">Select</a>
-          </div>
-
-          <div class="pricing-plan">
-            <h3>Pro</h3>
-
-            <p>$20/month</p>
-
-            <ul>
-              <li>Feature 1</li>
-
-              <li>Feature 2</li>
-
-              <li>Feature 3</li>
-            </ul>
-
-            <a href="#" class="cta-button">Select</a>
-          </div>
-        </div>
-      </section>
-
-      <section id="clients" class="clients">
-        <h2>Our Clients</h2>
-
-        <div class="client-logos">
-          <img src="https://picsum.photos/150/50" alt="Client Logo" />
-
-          <img src="https://picsum.photos/150/50" alt="Client Logo" />
-
-          <img src="https://picsum.photos/150/50" alt="Client Logo" />
-        </div>
-      </section>
-    </main>
-    <section id="contact" class="contact">
-      <h2>Contact Us</h2>
-      <form>
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit" class="cta-button">Send Message</button>
-      </form>
-    </section>
-
-    <footer>
-      <p>&copy; 2025 Rabba. All rights reserved.</p>
-    </footer>
-
     <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  </body>
+</body>
 </html>
