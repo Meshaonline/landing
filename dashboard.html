@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rabba Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div class="mobile-container">
+        <!-- Header -->
+        <header>
+            <div class="profile-info">
+                <img src="images/dashboard.jpg" alt="User Avatar" class="avatar">
+                <div>
+                    <p>Good morning,</p>
+                    <h2>Stephanie Obi</h2>
+                </div>
+            </div>
+            <span class="material-symbols-outlined">
+                notifications
+            </span>
+        </header>
+
+        <!-- Balance Card -->
+        <div class="balance-card">
+            <div class="balance-header">
+                <span>Rabba balance</span>
+                <span class="material-symbols-outlined" id="toggle-balance">
+                    visibility
+                </span>
+            </div>
+            <h1 id="balance-amount">₦200,000.31</h1>
+            <button class="fund-button">Fund account</button>
+        </div>
+
+        <!-- Quick Actions -->
+        <div class="quick-actions">
+            <div class="action-item">
+                <div class="icon-bg">
+                    <span class="material-symbols-outlined">arrow_upward</span>
+                </div>
+                <p>Top up</p>
+            </div>
+            <div class="action-item">
+                <div class="icon-bg">
+                    <span class="material-symbols-outlined">store</span>
+                </div>
+                <p>Utilities</p>
+            </div>
+            <div class="action-item">
+                <div class="icon-bg">
+                    <span class="material-symbols-outlined">swap_horiz</span>
+                </div>
+                <p>Airtime to cash</p>
+            </div>
+            <div class="action-item">
+                <div class="icon-bg">
+                    <span class="material-symbols-outlined">currency_naira</span>
+                </div>
+                <p>R2R</p>
+            </div>
+        </div>
+
+        <!-- Bills Section -->
+        <div class="bills-section">
+            <div class="section-header">
+                <h3>Your Next Bills</h3>
+            </div>
+            <div class="bill-item">
+                <div class="bill-icon">
+                    <span class="material-symbols-outlined">lightbulb</span>
+                </div>
+                <div class="bill-details">
+                    <p>Electricity due in 2 days</p>
+                    <span>Manual reminder</span>
+                </div>
+                <button class="pay-now-button">Pay now</button>
+            </div>
+            <div class="bill-item">
+                <div class="bill-icon">
+                    <span class="material-symbols-outlined">live_tv</span>
+                </div>
+                <div class="bill-details">
+                    <p>Netflix due on 3rd October</p>
+                    <span>Auto deduct</span>
+                </div>
+                <button class="view-button">View</button>
+            </div>
+        </div>
+
+        <!-- My Service Section -->
+        <div class="service-section">
+            <div class="section-header">
+                <h3>My Service</h3>
+            </div>
+            <div class="service-grid">
+                <div class="service-icon"><span class="material-symbols-outlined">tv</span></div>
+                <div class="service-icon"><span class="material-symbols-outlined">tv</span></div>
+                <div class="service-icon"><span class="material-symbols-outlined">tv</span></div>
+                <div class="service-icon"><span class="material-symbols-outlined">tv</span></div>
+                <div class="service-icon"><span class="material-symbols-outlined">tv</span></div>
+                <div class="service-icon"><span class="material-symbols-outlined">tv</span></div>
+                <div class="service-icon"><span class="material-symbols-outlined">tv</span></div>
+                <div class="service-icon"><span class="material-symbols-outlined">tv</span></div>
+                <div class="service-icon"><span class="material-symbols-outlined">tv</span></div>
+                <div class="service-icon"><span class="material-symbols-outlined">tv</span></div>
+            </div>
+        </div>
+
+        <!-- Giveaway Banner -->
+        <div class="giveaway-banner">
+            <h2>RABBA giveaway night</h2>
+            <p>500k worth of vouchers up</p>
+        </div>
+
+        <!-- Bottom Nav -->
+        <nav class="bottom-nav">
+            <div class="nav-item active">
+                <span class="material-symbols-outlined">home</span>
+                <p>Home</p>
+            </div>
+            <div class="nav-item">
+                <span class="material-symbols-outlined">receipt_long</span>
+                <p>Bills</p>
+            </div>
+            <div class="nav-item">
+                <span class="material-symbols-outlined">redeem</span>
+                <p>Rewards</p>
+            </div>
+            <div class="nav-item">
+                <span class="material-symbols-outlined">account_circle</span>
+                <p>Me</p>
+            </div>
+        </nav>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+</html>
